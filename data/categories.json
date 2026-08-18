@@ -1,0 +1,18 @@
+{
+  "sticker-sheet": {
+    "name": "Klistremerkeark",
+    "price": 55
+  },
+  "die-cut": {
+    "name": "Klistremerker",
+    "price": 25
+  },
+  "bookmark": {
+    "name": "Bokmerker",
+    "price": 35
+  },
+  "card": {
+    "name": "Kort",
+    "price": 40
+  }
+}
