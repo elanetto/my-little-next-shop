@@ -1,7 +1,7 @@
 [
   {
     "id": "A-0001",
-    "name": "Søt te-tid - klistremerkeark",
+    "name": "Te Tid",
     "slug": "sot-te-tid-klistremerkeark",
     "category": "sticker-sheet",
     "description": "Et koselig klistremerkeark med søte illustrasjoner med temaet te-tid.",
@@ -15,6 +15,77 @@
       "/images/products/sticker-sheets/A-0001/01.webp",
       "/images/products/sticker-sheets/A-0001/02.webp",
       "/images/products/sticker-sheets/A-0001/03.webp"
+    ],
+    "available": true
+  },
+  {
+    "id": "A-0002",
+    "name": "Kaffe Tid",
+    "slug": "sot-kaffe-tid-klistremerkeark",
+    "category": "sticker-sheet",
+    "description": "Et koselig klistremerkeark med søte illustrasjoner med temaet kaffe.",
+    "dimensions": {
+      "width": 8,
+      "height": 13,
+      "unit": "cm"
+    },
+    "keywords": ["søt", "kaffe", "koselig", "klistremerkeark"],
+    "images": [
+      "/images/products/sticker-sheets/A-0002/01.webp",
+      "/images/products/sticker-sheets/A-0002/02.webp",
+      "/images/products/sticker-sheets/A-0002/03.webp"
+    ],
+    "available": true
+  },
+  {
+    "id": "A-0003",
+    "name": "Rosa Ukekalender",
+    "slug": "sot-rosa-ukekalender-klistremerkeark",
+    "category": "sticker-sheet",
+    "description": "Et koselig klistremerkeark med søte illustrasjoner for å sette opp en ukeplanlegger i din kalender. Planlegg uken din med rosa klistremerker!",
+    "dimensions": {
+      "width": 8,
+      "height": 13,
+      "unit": "cm"
+    },
+    "keywords": [
+      "søt",
+      "kalender",
+      "bullet-journal",
+      "bujo",
+      "koselig",
+      "klistremerkeark"
+    ],
+    "images": [
+      "/images/products/sticker-sheets/A-0003/01.webp",
+      "/images/products/sticker-sheets/A-0003/02.webp",
+      "/images/products/sticker-sheets/A-0003/03.webp"
+    ],
+    "available": true
+  },
+  {
+    "id": "A-0004",
+    "name": "Blå Ukekalender",
+    "slug": "sot-bla-ukekalender-klistremerkeark",
+    "category": "sticker-sheet",
+    "description": "Et koselig klistremerkeark med søte illustrasjoner for å sette opp en ukeplanlegger i din kalender. Planlegg uken din med blå klistremerker!",
+    "dimensions": {
+      "width": 8,
+      "height": 13,
+      "unit": "cm"
+    },
+    "keywords": [
+      "søt",
+      "kalender",
+      "bullet-journal",
+      "bujo",
+      "koselig",
+      "klistremerkeark"
+    ],
+    "images": [
+      "/images/products/sticker-sheets/A-0004/01.webp",
+      "/images/products/sticker-sheets/A-0004/02.webp",
+      "/images/products/sticker-sheets/A-0004/03.webp"
     ],
     "available": true
   },
