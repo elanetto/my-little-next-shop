@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,18 +17,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elanetto Design",
-  description: "Søte klistremerker, bokmerker og kort laget i Norge.",
+  title: {
+    default: "Elanetto Design",
+    template: "%s | Elanetto Design",
+  },
+
+  description:
+    "Søte klistremerker, klistremerkeark, bokmerker og kort med originale illustrasjoner.",
+
+  icons: {
+    icon: "/star.png",
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="no"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#fffdfb] text-zinc-900">
-        {children}
+      <body className="min-h-screen flex flex-col">
+        <Header />
+
+        <div className="flex-1">
+          {children}
+        </div>
+
+        <Footer />
       </body>
     </html>
   );
