@@ -1,5 +1,12 @@
+"use client";
+
+import { useCartStore } from "@/store/cartStore";
+
 type ProductInfoProps = {
+  id: string;
   name: string;
+  slug: string;
+  image: string;
   description: string;
   price: number;
   width: number;
@@ -8,13 +15,28 @@ type ProductInfoProps = {
 };
 
 export default function ProductInfo({
+  id,
   name,
+  slug,
+  image,
   description,
   price,
   width,
   height,
   unit,
 }: ProductInfoProps) {
+  const addItem = useCartStore((state) => state.addItem);
+
+  function handleAddToCart() {
+    addItem({
+      id,
+      name,
+      slug,
+      image,
+      price,
+    });
+  }
+
   return (
     <div>
       <h1 className="text-4xl font-bold text-brown-dark">
@@ -41,9 +63,10 @@ export default function ProductInfo({
 
       <button
         type="button"
-        className="mt-8 w-full rounded-xl bg-pink-dark px-6 py-4 font-semibold text-white transition hover:bg-brown-light"
+        onClick={handleAddToCart}
+        className="mt-8 w-full cursor-pointer rounded-xl bg-pink-dark px-6 py-4 font-semibold text-white transition hover:bg-brown-light"
       >
-        Kjøp nå
+        Legg i handlekurv
       </button>
     </div>
   );

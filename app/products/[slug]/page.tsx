@@ -18,9 +18,7 @@ export async function generateMetadata({
 }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
 
-  const product = products.find(
-    (product) => product.slug === slug
-  );
+  const product = products.find((product) => product.slug === slug);
 
   if (!product) {
     return {
@@ -56,14 +54,10 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProductPage({
-  params,
-}: ProductPageProps) {
+export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params;
 
-  const product = products.find(
-    (product) => product.slug === slug
-  );
+  const product = products.find((product) => product.slug === slug);
 
   if (!product) {
     notFound();
@@ -81,10 +75,7 @@ export default async function ProductPage({
     notFound();
   }
 
-  const category =
-    categories[
-      product.category as keyof typeof categories
-    ];
+  const category = categories[product.category as keyof typeof categories];
 
   if (!category) {
     notFound();
@@ -93,13 +84,13 @@ export default async function ProductPage({
   return (
     <main className="mx-auto max-w-7xl px-6 py-12">
       <div className="grid gap-12 lg:grid-cols-2">
-        <ProductGallery
-          images={product.images}
-          productName={product.name}
-        />
+        <ProductGallery images={product.images} productName={product.name} />
 
         <ProductInfo
+          id={product.id}
           name={product.name}
+          slug={product.slug}
+          image={product.images[0]}
           description={product.description}
           price={category.price}
           width={product.dimensions.width}
